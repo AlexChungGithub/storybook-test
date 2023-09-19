@@ -1,11 +1,13 @@
 "use client";
-import { Button } from "../../components/ui/button";
-import { AspectRatioDemo } from "../../stories/shadcn/aspectRatio/AspectRatio.demo";
+
+import ToastDemo from "../../stories/radix/same/toast/Toast.demo";
+
+// import { ProgressDemo } from "../../stories/shadcn/progress/Progress.demo";
 
 export default function Page() {
   return (
     <>
-      <AspectRatioDemo />
+      <ToastDemo />
     </>
   );
 }
