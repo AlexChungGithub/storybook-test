@@ -1,6 +1,7 @@
-import React from 'react';
-import * as HoverCard from '@radix-ui/react-hover-card';
-import './styles.css';
+import React from "react";
+import * as HoverCard from "@radix-ui/react-hover-card";
+import "./styles.css";
+import Image from "next/image";
 
 const HoverCardDemo = () => (
   <HoverCard.Root>
@@ -11,7 +12,7 @@ const HoverCardDemo = () => (
         target="_blank"
         rel="noreferrer noopener"
       >
-        <img
+        <Image
           className="Image normal"
           src="https://pbs.twimg.com/profile_images/1337055608613253126/r_eiMp2H_400x400.png"
           alt="Radix UI"
@@ -20,27 +21,29 @@ const HoverCardDemo = () => (
     </HoverCard.Trigger>
     <HoverCard.Portal>
       <HoverCard.Content className="HoverCardContent" sideOffset={5}>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 7 }}>
-          <img
+        <div style={{ display: "flex", flexDirection: "column", gap: 7 }}>
+          <Image
             className="Image large"
             src="https://pbs.twimg.com/profile_images/1337055608613253126/r_eiMp2H_400x400.png"
             alt="Radix UI"
           />
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 15 }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 15 }}>
             <div>
               <div className="Text bold">Radix</div>
               <div className="Text faded">@radix_ui</div>
             </div>
             <div className="Text">
-              Components, icons, colors, and templates for building high-quality, accessible UI.
-              Free and open-source.
+              Components, icons, colors, and templates for building
+              high-quality, accessible UI. Free and open-source.
             </div>
-            <div style={{ display: 'flex', gap: 15 }}>
-              <div style={{ display: 'flex', gap: 5 }}>
-                <div className="Text bold">0</div> <div className="Text faded">Following</div>
+            <div style={{ display: "flex", gap: 15 }}>
+              <div style={{ display: "flex", gap: 5 }}>
+                <div className="Text bold">0</div>{" "}
+                <div className="Text faded">Following</div>
               </div>
-              <div style={{ display: 'flex', gap: 5 }}>
-                <div className="Text bold">2,900</div> <div className="Text faded">Followers</div>
+              <div style={{ display: "flex", gap: 5 }}>
+                <div className="Text bold">2,900</div>{" "}
+                <div className="Text faded">Followers</div>
               </div>
             </div>
           </div>
